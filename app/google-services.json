@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "71034799796",
+    "firebase_url": "https://newcaro-default-rtdb.firebaseio.com",
+    "project_id": "newcaro",
+    "storage_bucket": "newcaro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71034799796:android:e03b7d6c18767a8fce79e1",
+        "android_client_info": {
+          "package_name": "com.communityuni.advancedrealtimedatabasefirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71034799796-4hvqqv2mhphaqshpl15ecru1jnhpqst7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0HBbhMvXkBozRn2PqQj4I6i2ik8EoKUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71034799796-4hvqqv2mhphaqshpl15ecru1jnhpqst7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71034799796:android:c8d2f735ad428346ce79e1",
+        "android_client_info": {
+          "package_name": "vn.edu.vnu.hus.caro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71034799796-4hvqqv2mhphaqshpl15ecru1jnhpqst7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0HBbhMvXkBozRn2PqQj4I6i2ik8EoKUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71034799796-4hvqqv2mhphaqshpl15ecru1jnhpqst7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
