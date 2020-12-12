@@ -6,82 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".view.home">
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:text="Chọn kiểu:"
-        android:textSize="18sp"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="405dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="107dp"
+        android:text="Online"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="98dp"
-        android:layout_marginRight="98dp"
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:text="Đấu Giải"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/radioBtn_online"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Online"
-            android:textColor="#E77791"
-            android:textSize="24sp" />
-
-        <RadioButton
-            android:id="@+id/radioBtn_daugiai"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Đấu giải"
-            android:textColor="#87e777"
-            android:textSize="24sp" />
-
-        <RadioButton
-            android:id="@+id/radioBtn_dauvoimay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Đấu với máy"
-            android:textColor="#03A9F4"
-            android:textSize="24sp" />
-
-    </RadioGroup>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
-        android:id="@+id/btn_next"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginRight="21dp"
-        android:layout_marginBottom="260dp"
-        android:background="#553AB7"
-        android:text="next"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/button"
+        android:layout_width="406dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:text="Đấu vơi máy"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_thoat" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <Button
-        android:id="@+id/btn_thoat"
+        android:id="@+id/button4"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginRight="84dp"
-        android:layout_marginBottom="260dp"
-        android:text="thoát"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_next"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:text="Thoát"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

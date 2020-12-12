@@ -25,7 +25,14 @@ public class Gamer_controller
         dbGamer.setStatus(common.RANH_ROI);
 
         //gọi hàm Thêm dữ liệu
-        dbGamer.InsertGamer(dbGamer);
+        try
+        {
+            dbGamer.InsertGamer(dbGamer);
+        }
+        catch (Exception ex)
+        {
+            ex.printStackTrace();
+        }
 
     }
 

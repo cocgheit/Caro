@@ -43,43 +43,61 @@ public class MatchData_model extends CaroDriver
 
     }
 
+    public MatchData_model()
+    {
+        super();
+    }
+
 
     //Hàm tạo dữ liệu mới cho ma trận
-    public void CreateData(String TenTran)
+    public void CreateData(Match_model obj)
     {
 
         //Kết nối tới node có tên là Tên của trận đấu. (node này do ta định nghĩa trong CSDL Firebase.)
-        DatabaseReference myRef = this.dbCaro.getReference(TenTran);
+        DatabaseReference myRef = this.dbCaro.getReference("Matchs").child(obj.getMatchID()).child(obj.getMatchName());
 
         int i ;
         int j;
         for (i = 0; i <= this.row; i++)
-
-            //Thực hiện thêm nút. Tức thêm gán giá trị cho hàng trong ma trận
-            myRef.child("row" + i).push().setValue(0);
             for(j = 0; j <= this.col; j++)
             {
                 //Thực hiện thêm nút. Tức thêm gán giá trị cho cột trong ma trận
-                myRef.child("row" + i).child("col" + j).push().setValue(0);
+                myRef.child("row" + i).child("col" + j).setValue(0);
             }
 
     }
 
     //Hàm xóa hết dữ liệu  cho ma trận
-    public void DeleteData(MatchData_model obj)
+    public void DeleteData(Match_model obj)
     {
+        //Kết nối tới node có tên là Tên của trận đấu. (node này do ta định nghĩa trong CSDL Firebase.)
+        DatabaseReference myRef = this.dbCaro.getReference("Matchs").child(obj.getMatchID());
 
+        //Xóa dữ liệu trận đấu.
+        myRef.child(obj.getMatchName()).removeValue();
 
 
     }
 
     //Hàm cập nhật dữ liệu cho một ô (node)
-    public boolean UpdateNote(int value)
+    public boolean UpdateNote(Match_model obj, String rowKey, String colKey ,int value)
     {
 
-        //Các code khác viết ở đây.
+        boolean isOkay = true;
+        //Kết nối tới node có tên là Tên của trận đấu. (node này do ta định nghĩa trong CSDL Firebase.)
+        DatabaseReference myRef = this.dbCaro.getReference("Matchs").child(obj.getMatchID()).child(obj.getMatchName());
 
-        return true; //nếu cập nhật thành công
+        try
+        {
+            //Thực hiện cập nhật.
+            myRef.child(rowKey).child(colKey).setValue(value);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            isOkay = false;
+        }
+        return isOkay;
     }
 
 

@@ -25,6 +25,10 @@ public class common
     public static final int CHO_CHOI = 1;
     public static final int DANG_CHOI = 2;
 
+    //Định nghĩa các hằng số cho việc vẽ bàn cờ.
+    public static final int CHIEU_RONG = 30;
+    public static final int CHIEU_CAO = 20;
+
     //Hàm mã hóa MD5
     public static String md5(String str){
         String result = "";
